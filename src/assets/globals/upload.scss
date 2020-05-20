@@ -1,0 +1,131 @@
+.upload_drop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-family: Poppins;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: 0.69px;
+    color: #333333;
+    margin: 0 0 10px 0 !important;
+  }
+
+  .simple_file {
+    display: flex;
+    height: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+
+    img {
+      cursor: pointer;
+    }
+
+    .name_wrap {
+      display: flex;
+      flex-direction: column;
+      margin: 0 40px 0 16px;
+      width: 100%;
+
+      label {
+        font-family: Poppins;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+        color: #333333;
+        max-width: 200px;
+        word-wrap: break-word;
+      }
+
+      span {
+        font-family: Poppins;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0px;
+        color: #999999;
+      }
+    }
+
+  }
+
+  .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .btn {
+    width: 94px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4184CB 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    font-family: Poppins;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    color: #FFFFFF;
+    z-index: 100000;
+  }
+
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  .dropzone {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F5F8FF 0% 0% no-repeat padding-box;
+    border: 1px dashed #4184CB;
+    border-radius: 5px;
+    margin: 0 40px 33px 0;
+
+    span {
+      font-family: Poppins;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 400;
+      letter-spacing: 0.55px;
+      color: #4184CB;
+      margin: 10px 0 18px;
+    }
+  }
+
+  .upload_column {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .priorities {
+    width: 139px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EBF2FC;
+    border-radius: 5px;
+    font-family: Poppins;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 0.41px;
+    color: #333333;
+    margin-top: 20px;
+  }
+}
