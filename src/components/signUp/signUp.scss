@@ -1,0 +1,60 @@
+.sign_up{
+  width: 100%;
+  background-image: url("../../assets/images/signUpBack.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 72px 0;
+
+  .subscribe_info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    div{
+      display: flex;
+      flex-direction: column;
+      margin-left: 16px;
+    }
+    h2{
+      font-family: Raleway;
+      font-size: 28px;
+      line-height: 40px;
+      font-weight: 600;
+      letter-spacing: 1.4px;
+      color: #333333;
+      margin: 0 !important;
+    }
+    p{
+      font-family: Poppins;
+      max-width: 270px;
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 400;
+      letter-spacing: 0.7px;
+      color: #878787;
+      margin: 0 !important;
+    }
+  }
+
+  .sign_up_form{
+    display: flex;
+    input{
+      width: 444px;
+      height: 48px;
+      border-radius: 5px 0px 0px 5px;
+      padding-left: 30px;
+    }
+    button{
+      width: 174px;
+      height: 47px;
+      font-family: Poppins;
+      font-size: 16px;
+      border: none;
+      line-height: 20px;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      color: #FFFFFF;
+      background: transparent linear-gradient(180deg, #8CD9FF 0%, #4184CB 100%) 0% 0% no-repeat padding-box;
+      border-radius: 0px 5px 5px 0px;
+    }
+  }
+}

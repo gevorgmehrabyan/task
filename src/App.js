@@ -1,16 +1,18 @@
 import React from 'react';
 import './App.css';
-import Header from './components/header';
-import Footer from './components/footer';
+import 'antd/dist/antd.css';
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
 import Router from './router';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Header />
       <Router />
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

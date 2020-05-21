@@ -1,8 +1,8 @@
 import React from 'react';
-import './login.scss';
-import { Form, Input, Button } from 'antd';
+import './forgot.scss';
+import { Button, Form, Input } from 'antd';
 
-const Login = (props) => {
+const ForgotPassword  = () => {
   const onFinish = values => {
     console.log(values);
   };
@@ -13,35 +13,25 @@ const Login = (props) => {
 
   return (
     <Form
-      name="login_form"
+      name="reset_form"
       validateMessages={validateMessages}
       onFinish={onFinish}
     >
       <Form.Item
         name='email'
-        label="First Name"
+        label="Email"
         rules={[{ required: true }]}
         hasFeedback
       >
-        <Input placeholder="Your Email"/>
-      </Form.Item>
-      <Form.Item
-
-        name='password'
-        label="Last Name"
-        rules={[{ required: true }]}
-        hasFeedback
-      >
-        <Input placeholder="Password" />
+        <Input placeholder="Email" />
       </Form.Item>
       <Form.Item >
         <Button type="primary" htmlType="submit">
-          Submit
+          SEND RESET LINK
         </Button>
       </Form.Item>
     </Form>
   );
 }
 
-
-export default Login
+export default ForgotPassword;

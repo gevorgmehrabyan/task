@@ -1,0 +1,40 @@
+header {
+  width: 100%;
+  z-index: 100;
+  background: #4184CB;
+
+  .container{
+    min-height: 70px;
+  }
+
+  button {
+    background: transparent linear-gradient(180deg, #8CD9FF 0%, #4184CB 100%) 0% 0% no-repeat padding-box;
+    font-family: Poppins;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #FFFFFF;
+    border: none;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 12px 30px;
+    img {
+      margin-right: 11px;
+    }
+  }
+
+  h2 {
+    cursor: pointer;
+    font-family: Lato;
+    font-size: 32px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #333333;
+    margin: 0 !important;
+    span {
+      color: #FFFFFF;
+    }
+  }
+}
+
+

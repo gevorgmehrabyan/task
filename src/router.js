@@ -1,17 +1,16 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
+import { Route, Switch, Redirect} from 'react-router-dom';
 import Service from './redux/service';
-import {ROLES} from "./utils/constants";
-import { ROLE } from './utils/constants';
+import { ROLES , ROLE } from "./utils/constants";
 
 /**Auth*/
-import Home from './containers/home';
-import Login from './containers/login';
-import AdminLogin from './containers/adminLogin';
-import CandidateRegistration from './containers/candidateRegistration';
-import EmployerRegistration from './containers/employerRegistration';
-import ForgotPassword from './containers/forgot';
-import ResetPassword from './containers/reset';
+import Home from './containers/others/home/home';
+import Login from './containers/others/login/login';
+import AdminLogin from './containers/others/adminLogin/adminLogin';
+import CandidateRegistration from './containers/others/candidateRegistration/candidateRegistration';
+import EmployerRegistration from './containers/others/employerRegistration/employerRegistration';
+import ForgotPassword from './containers/others/forgot/forgot';
+import ResetPassword from './containers/others/reset/reset';
 
 /**Candidate*/
 import CandidateCalendar from './containers/candidate/calendar';
@@ -87,7 +86,6 @@ const PrivateEmployerRoute = ({component: Component, ...rest}) => {
 
 const Router = () => {
   return(
-    <BrowserRouter>
       <Switch>
         <PrivateRoute exact path="/login" component={Login} />
         <PrivateRoute exact path="/login/admin" component={AdminLogin} />
@@ -112,7 +110,6 @@ const Router = () => {
         <Route exact path="/forgot-password" component={ForgotPassword} />
         <Route exact path="/reset-password" component={ResetPassword} />
       </Switch>
-    </BrowserRouter>
   )
 };
 
